@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "stonkview-node-server",
   "version": "1.0.0",
   "description": "Node.js Server for StonkView app",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/Yiming0318/stonkview-node-server#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "mongoose": "^7.0.3"
