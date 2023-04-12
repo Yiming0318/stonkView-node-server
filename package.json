@@ -1,0 +1,31 @@
+{
+  "name": "stonkview-node-server",
+  "version": "1.0.0",
+  "description": "Node.js Server for StonkView app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yiming0318/stonkview-node-server.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "REST",
+    "Server",
+    "HTTP"
+  ],
+  "author": "Yiming Ge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yiming0318/stonkview-node-server/issues"
+  },
+  "homepage": "https://github.com/Yiming0318/stonkview-node-server#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.0.3"
+  }
+}
