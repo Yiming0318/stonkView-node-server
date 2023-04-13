@@ -12,3 +12,8 @@ export const findFollowing = (follower)=>
     followsModel.find({follower})
                 .populate('followed')
                 .exec()
+
+export const unfollow = async (follow) => {
+  const deletedFollow = await followsModel.deleteOne(follow);
+  return deletedFollow;
+};

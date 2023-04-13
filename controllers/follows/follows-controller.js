@@ -19,9 +19,16 @@ const FollowsController = (app) =>{
     res.json(followed)
   }
 
+  const unfollow = async (req, res) => {
+    const follow = req.body;
+    const status = await dao.unfollow(follow);
+    res.json(status);
+  };
+
   app.post('/follows',followUser)
   app.get('/users/:followed/followers', findFollowers)
   app.get('/users/:follower/following', findFollowing)
+  app.delete("/follows", unfollow);
 }
 
 export default FollowsController
