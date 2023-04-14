@@ -10,7 +10,7 @@ import SessionController from "./controllers/session/session-controller.js";
 import FollowsController from "./controllers/follows/follows-controller.js";
 
 
-const CONNECTION_STRING = 'mongodb://localhost:27017/stonkview'
+const CONNECTION_STRING = 'mongodb://127.0.0.1:27017/stonkview'
 mongoose.connect(CONNECTION_STRING).then(() => console.log('Successfully connected to DB!') );
 
 const app = express()
