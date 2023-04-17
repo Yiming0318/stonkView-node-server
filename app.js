@@ -8,7 +8,8 @@ import GoldUserController from "./controllers/users/users-gold-controller.js"
 import AdminUserController from "./controllers/users/users-admin-controller.js"
 import SessionController from "./controllers/session/session-controller.js";
 import FollowsController from "./controllers/follows/follows-controller.js";
-
+import ReviewController from "./controllers/review/review-controller.js";
+import BuyinController from "./controllers/buyIn/buyin-controller.js";
 
 const CONNECTION_STRING = 'mongodb://127.0.0.1:27017/stonkview'
 mongoose.connect(CONNECTION_STRING).then(() => console.log('Successfully connected to DB!') );
@@ -35,6 +36,8 @@ AdminUserController(app)
 SessionController(app)
 ProfileController(app)
 FollowsController(app)
+ReviewController(app)
+BuyinController(app)
 
 app.listen(process.env.PORT ||4000)
 
