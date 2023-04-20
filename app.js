@@ -11,7 +11,7 @@ import FollowsController from "./controllers/follows/follows-controller.js";
 import ReviewController from "./controllers/review/review-controller.js";
 import BuyinController from "./controllers/buyIn/buyin-controller.js";
 
-const CONNECTION_STRING = 'mongodb://127.0.0.1:27017/stonkview'
+const CONNECTION_STRING = 'mongodb+srv://giuseppi:supersecretpassword@cluster0.dsu2jvc.mongodb.net/?retryWrites=true&w=majority' || 'mongodb://127.0.0.1:27017/stonkview'
 mongoose.connect(CONNECTION_STRING).then(() => console.log('Successfully connected to DB!') );
 
 const app = express()
