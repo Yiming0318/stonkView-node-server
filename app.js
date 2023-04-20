@@ -25,10 +25,8 @@ app.use(session({
   secret: 'SatoshiNakamotoSecret',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: false }
+  cookie: { secure: true}
 }))
-
-app.use(express.json())
 
 BronzeUserController(app)
 GoldUserController(app)
