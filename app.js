@@ -28,6 +28,8 @@ app.use(session({
   cookie: { secure: true}
 }))
 
+app.use(express.json())
+
 BronzeUserController(app)
 GoldUserController(app)
 AdminUserController(app)
