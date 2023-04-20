@@ -2,7 +2,7 @@
 ## Tech Stack
 Node, Express, MongoDB
 ## Run Locally
-
+Change DB path and cookie secure to false in App.js
 Install dependencies
 
 ```bash
